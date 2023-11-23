@@ -1,8 +1,11 @@
 
 package com.mycompany.tallermaven;
 
+import lombok.Getter;
+import lombok.Setter;
+
 public class Motocicleta extends Vehiculo {
-    private int cilindrada;
+     @Setter @Getter private int cilindrada;
     
     // Constructores, getters y setters
 
@@ -12,20 +15,4 @@ public class Motocicleta extends Vehiculo {
         super(marca, modelo, placa, horaIngreso);
         this.cilindrada = cilindrada;
     }
-
- 
-    
-
-    public int getCilindrada() {
-        return cilindrada;
-    }
-
-    public void setCilindrada(int cilindrada) {
-        this.cilindrada = cilindrada;
-    }
-
-    
-    
-
-    
 }
