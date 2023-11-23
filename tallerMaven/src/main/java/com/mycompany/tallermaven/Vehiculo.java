@@ -1,13 +1,10 @@
 package com.mycompany.tallermaven;
 
+import lombok.Getter;
+import lombok.Setter;
 
 public class Vehiculo {
-    private String marca;
-    private String modelo;
-    private String placa;
-    private String horaIngreso;
-    private String horaSalida;
-
+  @Setter @Getter private String marca, modelo, placa, horaIngreso, horaSalida;
 
     // Constructores, getters y setters
 
@@ -37,47 +34,5 @@ public class Vehiculo {
 
         return 2000 + ((horasIngreso - horasSalida) * 200);
 
-    }
-
-    public String getMarca() {
-        return marca;
-    }
-
-    public void setMarca(String marca) {
-        this.marca = marca;
-    }
-
-    public String getModelo() {
-        return modelo;
-    }
-
-    public void setModelo(String modelo) {
-        this.modelo = modelo;
-    }
-
-    public String getPlaca() {
-        return placa;
-    }
-
-    public void setPlaca(String placa) {
-        this.placa = placa;
-    }
-
-    public String getHoraIngreso() {
-        return horaIngreso;
-    }
-
-    public void setHoraIngreso(String horaIngreso) {
-        this.horaIngreso = horaIngreso;
-    }
-
-    public String getHoraSalida() {
-        return horaSalida;
-    }
-
-    public void setHoraSalida(String horaSalida) {
-        this.horaSalida = horaSalida;
-    }
-    
-    
+    } 
 }
